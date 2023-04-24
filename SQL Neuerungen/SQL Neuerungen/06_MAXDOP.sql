@@ -68,7 +68,11 @@ group by country, city  option (maxdop 8)
 --zeitgleich CPU Leistung
 --Taskmanager sollte eine Reduzierung der Prozesssorzeit zeigen
 
---Siet SQL 2016 l‰ﬂt dich der MAXDOP auch pro DB einstellen
+--seit SQL 2016 l‰ﬂt dich der MAXDOP auch pro DB einstellen
+
+--Seit SQL 2022 kann die QueryOptimizer mit Hilfe des Query Store an MAXDOP dynamisch anpassen
+--MAXDOP Feedback
+
 
 USE [master]
 GO

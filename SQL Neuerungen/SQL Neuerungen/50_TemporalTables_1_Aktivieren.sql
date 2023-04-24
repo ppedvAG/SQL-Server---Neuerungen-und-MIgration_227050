@@ -1,4 +1,4 @@
-Create database TemporalTables
+--Create database TemporalTables
 GO
 
 Use TemporalTables

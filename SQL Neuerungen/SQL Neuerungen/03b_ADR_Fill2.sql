@@ -14,7 +14,7 @@ GO
 Begin tran
 
 declare @i as int= 1
-while @i< 750000
+while @i< 500000
 	begin
 		insert into test1 
 		select @i,'XY', @i, GETDATE()

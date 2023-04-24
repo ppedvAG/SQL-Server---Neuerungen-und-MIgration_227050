@@ -28,6 +28,8 @@ update contacts set Lastname = 'Smith' where cid = 1
 
 --Result
 select * from contacts 
+
+select * from contactshistory
 select * , 
 		(Select  
 			convert(varchar(50),min(Startdatum)) 
@@ -43,13 +45,13 @@ select * ,
 
 select * from contactshistory 
 where 
-    Startdatum >= '14.4.2023 12:30:00'  
+    Startdatum >= '20.4.2023 14:56:00'  
     and 
-    Enddatum <= '14.4.2023 12:32:30'
+    Enddatum <= '20.4.2023 14:57:00'
 
 --Noch besser
 select * from contacts 
-    FOR SYSTEM_TIME AS OF '14.4.2020 18:52:44'
+    FOR SYSTEM_TIME AS OF'20.4.2023 14:57:00'
 
 select * from contacts 
     FOR SYSTEM_TIME CONTAINED IN ('14.4.2023 12:30:30'	 ,'14.4.2023 12:32:30')

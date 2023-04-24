@@ -32,7 +32,12 @@ Gruppen von DB
 
 NEU SQL Server 2022
 eig SystemDBs pro Gruppe
-am besten immer mit Gruppe verbinden und dort Logins und Jobs anlegen
+am besten immer mit Gruppe verbinden 
+--> und kann man wie gewohnt Logins und Jobs anlegen
+
+Die SystemDB der Gruppe haben den Namen Gruppe_master
+und Gruppe_msdb
+
 
 */
 ALTER DATABASE [AG1] SET HADR AVAILABILITY GROUP = [AG_Gruppe];
